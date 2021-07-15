@@ -1,0 +1,561 @@
+#sec1{
+    padding-top: 150px;
+    margin-bottom: 100px;
+}
+#footer{
+     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+
+    border-top: 1px solid #396afc;
+    background: #fff;
+    text-align: center;
+    padding: 50px;
+}
+
+#tabs ul{
+       border-radius: 20px;
+    background: #fff;
+    margin-bottom: 50px;
+       box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+     width: 200px;
+    height: 150px;
+    margin-bottom: 40px;
+    text-align: center;
+  
+}
+
+#tabs li{
+
+    padding: 10px;
+    transition: .3s;
+    border:none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#tabs li:hover{
+     box-shadow: 0 2px 8px rgb(0 0 0 / 20%), 0 8px 20px rgb(0 0 0 / 20%);
+  transform: translate(0,-5px);
+}
+
+#tabs ul:after{
+    content: '';
+    clear: both;
+    display: block;
+}   
+#tabs li.on{
+    color: #396afc;
+   
+}
+#tabs2 li.on{
+    color: #396afc;
+   
+}
+
+.title{
+    margin-bottom: 20px;
+}
+.title .sig-color{
+    font-size: 14px;
+}
+
+
+#imageCanvas{
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events:none;
+}
+
+#img_id{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.post_form_container{
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+
+.post_form{
+    padding: 40px;
+    background-color: #fff;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    margin: 0 0 10px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.post_form .title{
+    margin: 0 10px 40px;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    color: #396afc  
+}
+
+
+.post_form .preview{
+    margin-bottom: 30px;
+}
+
+.post_form .preview .upload{
+    max-width: 300px;
+    height: 300px;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.plus_icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    border: 1px solid #396afc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.plus_icon span{
+    position: absolute;
+    display: block;
+    width: 2px;
+    height: 30px;
+    background: #396afc;
+
+}
+input[type="file"]{
+    background: none;
+}
+
+.plus_icon span:nth-child(2){
+    transform:rotate(90deg);
+}
+
+.post_form p{
+    margin-bottom: 20px;
+    
+}
+.post_form p.now1,.post_form div.now3,.post_form div.now4,.post_form div.now5,.post_form div.now6,.post_form div.now7,.post_form div.now8{
+    padding: 20px;
+    border-radius: 6px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    margin-bottom: 20px;
+
+}
+.post_form div.now2{
+    padding: 20px;
+   height: 100px;
+   border-radius: 6px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    margin-bottom: 20px;
+
+}
+ .add_title{
+   width: 100px;
+     height: 100%;
+     margin-top: 20px;
+     float: left;
+}
+.add_title:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+#member_post{
+margin-right: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    border:1px solid #396afc;
+    outline-color: #396afc;
+    color: #fff;
+    background-color: #396afc;
+    cursor: pointer;
+        
+}
+#member_post::placeholder{
+    color: #fff;
+}
+#member_addr{
+        padding: 10px;
+    border-radius: 6px;
+    border:1px solid #396afc;
+    outline-color: #396afc
+
+}
+.detail_add{
+    width: 800px;
+}
+.detail_add input{
+    margin-top: 20px;
+    width: 600px;
+    padding: 10px;
+    border-radius: 6px;
+    border:1px solid #396afc;
+    outline-color: #396afc
+
+}
+
+
+.post_form input[type=file]{
+    width: 100%;
+    background: 0 0;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #262626;
+    font-size: 14px;
+    padding: 7px 8px 7px;
+    display: none;
+}
+.file_sel_img{
+    width: 30px;
+    cursor: pointer;
+    display: block;
+
+}
+.post_form .pointer{
+    cursor: pointer;
+}
+
+
+.post_form textarea{
+    width: 100%;
+    background: 0 0;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #262626;
+    font-size: 14px;
+    padding: 7px 8px 7px;
+    border:none;
+    outline-color: #396afc;
+    margin-bottom: 20px;
+}
+
+.post_form .product_title{
+         width: 100%;
+    background: 0 0;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #262626;
+    font-size: 14px;
+    padding:10px 10px 8px 7px;
+    border:none;
+    outline-color: #396afc;
+    height: 60px;
+}
+
+
+
+#footer{
+    text-align: center
+}
+.goback{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    cursor: pointer;
+}
+.goback img{
+    width: 40px;
+}
+
+::placeholder{
+    color: #aaa;
+}
+
+
+
+.select_area{
+    width: 200px;
+    margin-left: 30px;
+    padding: 10px; /* 내부여백 */
+    padding-left: 12px;
+    border: 1px solid #396afc;
+   
+    background-size: 50px; /* 화살표 크기 */
+    border-radius: 6px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 12px;
+    color: #000;
+    outline:none;
+    font-size: 14px;
+    font-family:'GmarketSansMedium';
+
+
+}
+.txt_area{
+margin-top: 15px;
+    height: 50px;
+    width: 100px;
+    float: left;
+}
+.ckbox_area{
+    margin-top: 10px;
+    height: 35px;
+}
+
+.now5{
+    height: 40px;
+}
+.now5 .txt_area{
+    width: 100px;
+    
+    margin: 0;
+}
+.now5 input[type="text"]{
+    margin-bottom: 20px;
+    padding: 10px;
+    margin-right: 5px;
+    border:1px solid #396afc;
+    border-radius: 6px;
+    outline-color: #396afc;
+}
+
+.now6{
+    height: 60px;
+
+}
+
+.txt2_area p{
+    margin-top: 12px;
+    width: 100px;
+    float: left;
+
+    
+}
+.input_area{
+    
+}
+.now6 input{
+    width: 300px;
+}
+.now6:after{
+    clear: both;
+    content: '';
+    display: block;
+}
+.input_area input{
+    padding: 10px;
+   
+    border:1px solid #396afc;
+    border-radius: 6px;
+    outline-color: #396afc;
+}
+.submit_btn {
+    background: #396afc;
+    border-color: #396afc;
+    color: #fff;
+    font-size: 20px;
+    outline: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-bottom-color:skyblue;
+    border-right-color: skyblue;
+}
+.tag_info{
+    color: #aaa;
+    font-size: 14px;
+}
+#tabs-2 table{
+    border-radius: 20px;
+    width: 100%;
+    text-align: center;
+    table-layout: fixed;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    background: #fff;
+}
+#tabs-2 thead tr{
+    height: 2.5rem;
+    border-bottom: 1px solid #396afc;
+}
+#tabs-2 tr > td:nth-child(1){
+    width: 10.5rem;
+}
+#tabs-2 tr > td:nth-child(2){
+    width: 8rem;
+}
+#tabs-2 tr > td:nth-child(3){
+    width: 15.5rem;
+}
+#tabs-2 tr > td:nth-child(4){
+    width: 6.5rem;
+}
+#tabs-2 tr > td:nth-child(5){
+    width: 7.5rem;
+}
+#tabs-2 tr > td:nth-child(6){
+    width: 4.5rem;
+}
+#tabs-2 tr > td:nth-child(7){
+    width: 7.5rem;
+}
+#tabs-2 tr > td:nth-child(8){
+    width:4rem;
+}
+
+#tabs-2 tbody tr{
+    border-bottom: 1px solid rgb(220, 219, 228);
+}
+#tabs-2 table tbody tr > td:first-child{
+    height: 9.5rem;
+}
+#tabs-2 table tr > td:first-child img{
+    width: 100%;
+    border-radius: 10px;
+}
+#tabs-2 table tr > td{
+    vertical-align: middle;
+    padding: 0.5rem;
+    line-height: normal
+}
+#tabs-2 table tr > * {
+    flex-shrink: 0;
+}
+#tabs-2 table tr > td:last-child a{
+        width: 3.25rem;
+    height: 2rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-radius: 2px;
+    border: 1px solid rgb(195, 194, 204);
+    color: #396afc;
+}
+#tabs-3 ul{
+    width: 100%;
+    height: 50px;
+    
+}
+#tabs-3 ul li{
+    float: left;
+    width: 40%;
+
+}
+#tabs-3 ul li a{
+    padding: 10px 100px;
+}
+#tabs2-1{
+    display: flex;
+    flex-direction: column;
+}
+#tabs2-1 .purchasaed_box{
+    margin-top: 1rem;
+    padding: 0px 1rem;
+    
+}
+#tabs2-1 .purchased{
+    display: flex;
+    -webkit-box-align:center;
+    align-items: center;
+    height: 6rem;
+}
+#tabs2-1 .purchased_pro{
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    border: 1px solid rgb(234, 233, 241);
+    border-radius: 2px;
+}
+#tabs2-1 .what{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 0.5rem;
+    overflow: hidden;
+}
+.purchased{
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 6px;
+    transition: .3s;
+    margin-bottom: 20px;
+
+}
+.purchased:hover{
+    transform: translate(0,-5px);
+}
+.purchased_pro > img{
+    width: 6rem;
+    height: 6rem;
+        border-radius: 6px;
+
+}
+.purchased_pro .overimg{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(30, 29, 41, 0.8);
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+        border-radius: 6px;
+
+}
+.what{
+    
+}
+
+.overimg img{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 0.6rem;
+}
+.what1, .what2{
+        color: rgb(30, 29, 41);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.what2{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 4px 0px;
+    font-size: 0.8125rem;
+    line-height: 0.8125rem;
+}
+.what2 strong{
+    color: #396afc;
+}
+.what3{
+    line-height: 1rem;
+    color: rgb(94, 92, 107);
+    font-size: 0.75rem;
+}
+.what4{
+    line-height: 1rem;
+    font-size: 0.75rem;
+}
+#tabs2-2 .notready{
+    text-align: center;
+    padding: 20px;
+    font-weight: normal;
+}

@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+/*googleips 웹폰트 css 파일 불러오기*/
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Galada', cursive; */
+
+/* 저장된 글꼴 파일 선언*/
+/* @font-face { font-family : font_gothic;    
+                src : url(../font/NanumGothic.ttf); }  */
+/* 웹사이트의 글꼴 파일 선언*/
+/* @font-face { font-family : font_gothic;    
+                src : url(http://uhbee.com/nanum.eot) ; }   */
+
+
+* {margin:0; padding:0;}
+html{font-size:16px;}
+body{ font-size:16px;
+      color:#000;
+      font-family:'GmarketSansMedium';
+    background-color: #eee;
+}
+ul, ol, li{list-style-type:none}
+img, fieldset{border:none;vertical-align: middle}
+hr {clear:both;border:none}
+a {color:inherit;text-decoration:none}
+table{border-collapse:collapse}
+input, textarea {color:inherit;font-size:inherit;
+       font-family:inherit;
+       vertical-align: middle}
+button{outline:0}
+.sig-color{color: #396afc;}
+
+#footer{
+     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+
+    border-top: 1px solid #396afc;
+    background: #fff;
+    text-align: center;
+    padding: 50px;
+}

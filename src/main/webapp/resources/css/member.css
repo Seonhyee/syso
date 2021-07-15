@@ -1,0 +1,108 @@
+#sec1{
+        padding-top: 180px;
+        margin-bottom: 100px;
+    }
+
+.wrap2{
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    box-shadow: 27px 43px 43px -26px rgba(89,89,89,0.39);
+    border-radius: 20px;
+    background-color: #fff;
+    
+}
+.loginform{
+    padding: 40px;
+    text-align:center;
+}
+.gotoJoin{
+    float: right;
+    padding: 40px;
+}
+.normal{
+    color: #aaa;
+}
+.gotoJoin li{
+    float: left;
+    margin-left: 20px;
+}
+.gotoJoin li:nth-child(2){
+    margin-top: 3px;
+}
+.go{
+    margin-bottom: 50px;
+}
+.go:after{
+    clear: both;
+    display: block;
+    content: '';
+}
+.wrap2 .position{
+ width: 400px;
+ margin: 0 auto;
+ position: relative;
+
+}
+.wrap2 .position img{
+    position: absolute;
+    left: -2%;
+    top: 10%;
+    width: 20px;
+}
+.wrap2 input[type="text"],.wrap2 input[type="password"]{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    outline: none;
+
+
+}
+.wrap2 input:focus{
+    border-bottom: 1px solid #396afc;
+}
+.wrap2 input[type="submit"],.wrap2 input[type="button"]{
+    width: 180px;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+}
+.wrap2 input[type="submit"]{
+  margin-bottom: 20px;
+      margin: 0 auto;
+width: 300px;
+height: 44px;
+border-radius: 5px;
+margin-bottom: 8px;
+font-size: 12px;
+color: #4a4a4a;
+background-color: #ffffff;
+box-shadow: 0 2px 1px 0 rgba(155, 155, 155, 0.5);
+display: block;
+align-items: center;
+cursor: pointer;
+
+}
+
+.forget{
+    margin-top: 20px;
+}
+
+#google-box{
+    margin: 0 auto;
+width: 300px;
+height: 44px;
+border-radius: 5px;
+font-size: 12px;
+color: #4a4a4a;
+background-color: #ffffff;
+box-shadow: 0 2px 1px 0 rgba(155, 155, 155, 0.5);
+display: block;
+align-items: center;
+cursor: pointer;
+}
+.google_txt{
+    transform: translate(0,10px);
+}

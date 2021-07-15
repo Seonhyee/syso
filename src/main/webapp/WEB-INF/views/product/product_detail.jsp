@@ -1,0 +1,518 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+
+<title>시소마켓 | 상품상세</title>
+  <!--[if lt IE 9]>
+      <script src="js/html5.js"></script>
+   <![endif]-->
+
+<link href="../resources/css/common.css" rel="stylesheet" type="text/css">
+<link href="../resources/css/header.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="../resources/css/product.css">
+
+
+
+
+<script src="../resources/resources/js/jquery-3.1.1.min.js"></script>
+<script src="../resources/js/jquery-ui.min.js"></script>
+<script src="../resources/js/toggle.js"></script>
+
+
+</head>
+
+<body>
+
+<div class="bar">
+    <ul>
+    <li id="btn">
+        <img src="../resources/images/alarm.svg">
+
+        <ul id="layer">
+      <li><a href="#">""님이 구매하셨습니다</a></li>
+      <li><a href="#">""님이 구매하셨습니다</a></li>
+      <li><a href="#">""님이 구매하셨습니다</a></li>
+    </ul>
+
+
+        </li>
+        
+           <li>
+            
+            <a href="#"><img src="../resources/images/redheart.svg"></a>
+        </li>
+        
+        
+        <li>
+        <a href="#">TOP</a>
+        </li>
+    </ul>
+    </div>
+  <header id="header">
+    <nav id="nav">
+         <div id="wrap">
+                <div class="login">
+
+    <ul>
+        <li><a href="/syso/login" class="sig-color">로그인</a></li>
+        <li><a href="/syso/join" class="sig-color">회원가입</a></li>
+    </ul>
+
+
+    </div>
+             <h1 id="logo"><a href=/syso/"><img src="../resources/images/main_logo.svg"></a></h1>
+
+        <div class="search_wrap">
+        <div class="search_area">
+            <input type="text" class="search" placeholder="상품명,지역명,@상점명 입력">
+        <a href="#" class="search_img"><img src="../resources/images/home_search.svg"></a>
+        </div>
+
+
+             </div>
+             <div class="nav_right">
+             <ul>
+                 <li>
+               <a href="/syso/item/insert"><img src="../resources/images/money.svg"> 판매하기
+                     </a></li>
+                 <li>
+                 <a href="/syso/shop/item"><img src="/syso/item">내상점</a>
+                 </li>
+
+                 <li>
+                 <a href=""><img src="../resources/images/talk.svg">시소톡</a>
+                 </li>
+
+                 <li id="btn2">
+                 <img src="../resources/images/hamburg.svg">카테고리
+
+                    <ul id="layer2">
+                        <li class="strong"><a href="#">전체 카테고리</a></li>
+
+
+                        <li><a href="#">여성의류</a></li>
+                        <li><a href="#">패션잡화</a></li>
+                        <li><a href="#">남성의류</a></li>
+                        <li><a href="#">디지털/가전</a></li>
+                        <li><a href="#">도서/티켓/취미/반려</a></li>
+                        <li><a href="#">스타굿즈</a></li>
+                        <li><a href="#">생활/문구/가구/식품</a></li>
+                        <li><a href="#">스포츠/레저</a></li>
+                        <li><a href="#">뷰티/미용</a></li>
+                        <li><a href="#">유아동/출산</a></li>
+                        <li><a href="#">차량/오토바이</a></li>
+                        <li><a href="#">기타</a></li>
+
+                     </ul>
+
+
+                 </li>
+
+                 </ul>
+             </div>
+
+        </div>
+
+      </nav>
+
+
+    </header>
+    
+    <section id="sec1">
+    <div id="wrap">
+        <article class="product_info">
+        <div class="img_area">
+            <img src="../resources/images/inyoung.jpg" width="430" height="430">    
+            
+            </div>
+            
+        </article>
+        
+        
+        <article class="product_detail">
+            <div class="txt_area">
+            <h2 class="title">[판매] 새둥지의 이인영</h2>
+            <h1 class="price">1000,000,000,000,000원</h1>
+            
+        </div>
+            
+            <ul class="db_area">
+            <li><img src="../resources/images/grayheart.svg"><span class="small">0</span></li>
+            <li><img src="../resources/images/eye.svg"><span class="small">19009089</span></li>
+            <li><img src="../resources/images/clock.svg"><span class="small">4시간 전</span></li>
+            <li><a href="#">
+                <img src="../resources/images/siren.svg"><span class="small">신고하기</span>
+                </a></li>
+            </ul>
+            <div class="status_area">
+            <ul class="status">
+                <li>*상품상태</li>
+                <li>*교환여부</li>
+                <li style="margin-bottom:24px;">*배송비</li>
+                <li>*거래지역</li>
+            </ul>
+            
+            <ul class="status_detail">
+                <li>중고</li>
+                <li>교환삽가능</li>
+                <li style="color:#396afc">배송비없음</li>
+                <li style="color: skyblue;">부산광역시 부산진구</li>
+            
+            </ul>
+                
+            </div>
+            
+           <div class="btn_area">
+           <div class="btn">
+               <button class="btn1">
+               <img src="../resources/images/whiteheart.svg">&nbsp;
+                   <span>찜</span>
+                   <span>0</span>
+               </button>
+               </div>
+            <button class="btn2">연락하기</button>
+            <button class="btn3">바로구매</button>
+               
+            </div>
+            
+            
+        
+        </article>
+        
+        </div>
+    
+    </section>
+    
+    <section id="sec2">
+    <div id="wrap">
+        <h2>연관상품</h2>
+        <article class="simillar">
+        <div class="si_product">
+            <a href="#">
+            <div class="img_area2">
+               <img src="../resources/images/streetinyoung.jpg" width="155" height="155"> 
+                </div>
+                
+            <div class="txt_area2">
+                거리의 인영
+                </div>
+            </a>
+            </div>
+            
+            <div class="si_product">
+            <a href="#">
+            <div class="img_area2">
+               <img src="../resources/images/streetinyoung.jpg" width="155" height="155"> 
+                </div>
+                
+            <div class="txt_area2">
+                거리의 인영
+                </div>
+            </a>
+            </div>
+            
+            <div class="si_product">
+            <a href="#">
+            <div class="img_area2">
+               <img src="../resources/images/streetinyoung.jpg" width="155" height="155"> 
+                </div>
+                
+            <div class="txt_area2">
+                거리의 인영
+                </div>
+            </a>
+            </div>
+            
+            <div class="si_product">
+            <a href="#">
+            <div class="img_area2">
+               <img src="../resources/images/streetinyoung.jpg" width="155" height="155"> 
+                </div>
+                
+            <div class="txt_area2">
+                거리의 인영
+                </div>
+            </a>
+            </div>
+            
+            <div class="si_product">
+            <a href="#">
+            <div class="img_area2">
+               <img src="../resources/images/streetinyoung.jpg" width="155" height="155"> 
+                </div>
+                
+            <div class="txt_area2">
+                거리의 인영
+                </div>
+            </a>
+            </div>
+            
+            <div class="si_product">
+            <a href="#">
+            <div class="img_area2">
+               <img src="../resources/images/streetinyoung.jpg" width="155" height="155"> 
+                </div>
+                
+            <div class="txt_area2">
+                거리의 인영
+                </div>
+            </a>
+            </div>
+        
+        </article>
+        
+        </div>
+    
+    </section>
+    
+    
+    <section id="sec3">
+    <div id="wrap">
+      
+        <div class="left_area">
+        <div class="l1">
+            <p class="info">
+            상품정보
+            </p>
+            
+            <p class="info_content">
+            하자x 네고x 예약x
+                즉시데려 가실분만 연락주세요 !!<br>
+                저도 산 가격이 있어서 제가 손해보는 거에요 ㅠㅠ<br>
+                (연락주시고 연락 없는 분들 차단하겠습니다)
+                
+            </p>
+            
+            <ul class="categoryand">
+            <li><p><img src="../resources/images/category2.svg"><span>카테고리</span> </p>
+                <p class="p2">사람 ></p>
+                </li>
+                
+                 <li><p><img src="../resources/images/tag.svg"><span>상품태그</span> </p>
+                 <p class="p2">#나는 #오늘도 #눈물을</p>
+                </li>
+        
+            </ul>
+            
+            <p class="info2">
+            상품문의
+            </p>
+            
+            <div class="replyform">
+            <form action="" method="post">
+            <textarea placeholder="상품문의 입력 (100글자 내외)" name="reply"></textarea>
+                
+            <input type="submit" value="등록">
+            </form>
+            </div>
+            
+            <div class="replyArea">
+            <a href=""><img src="../resources/images/symbol.svg" width="48" height="48"></a>
+             
+            <div class="replyText">
+                <div class="set">
+                <div class="txt1">
+                시소알림센터
+                </div>
+                
+                <div class="txt1-2">0초전</div>
+                </div>
+                
+                <div class="txt2">[공지글] 이 상품은 청소년 보호법으로 제재되었습니다.</div>
+                
+                
+                <div class="txt3">
+                <div class="report">
+                    <img src="../resources/images/siren.svg" width="14" height="14"><span class="report_txt">신고하기</span>
+                    </div>
+                </div>
+                
+                </div>    
+            
+            </div>
+            
+            
+            </div>
+        </div>
+        
+        
+        
+        
+        <div class="right_area">
+        <div class="r1">
+            <div class="r_title">상점정보</div>
+            
+            </div>
+            <div class="shop_area">
+            <div class="shop_name">
+                <a class="mar">
+                <img src="../resources/images/default_shop_img.svg" width="48" height="48">
+                </a>
+                
+                <div class="shop_info">
+                <a href="" class="shop_title">이인영</a>
+                </div>
+                <div class="shop_text">
+                <a href="">상품40</a>
+                </div>
+            
+                
+                </div>
+            
+                    
+                <div class="more">
+                <div class="more_img">
+                    <a href="#"><img src="../resources/images/inyoung.jpg" width="120" height="96">
+                    
+                        <div class="more_img_txt">
+                        <span>0원</span>
+                        </div>
+                    
+                    </a>  
+                    
+                    </div>
+                    
+                    <div class="more_img">
+                      <a href="#"><img src="../resources/images/inyoung.jpg" width="120" height="96">
+                        
+                        <div class="more_img_txt">
+                        <span>0원</span>
+                        </div>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+                
+                <div class="more_link">
+                <a href="#" class="link_txt">
+                    <span class="sig-color" style="margin-right: 2px; margin-top: 5px;">2개</span>상품 더보기 >
+                    </a>
+                </div>
+                
+                <div class="review_area">
+                <div class="rev_title">
+                    상점후기 <span class="sig-color">5</span>
+                    </div>
+                    
+                    <div class="rev_content">
+                        <div class="rev_box">
+                        <a class="rev_img" href="">
+                            <img src="../resources/images/default_shop_img.svg" width="32" height="32">
+                            </a>
+                        
+                            <div class="rev_txt">
+                                <div class="rvtxt1">
+                                <a href="" class="goshop">김유신</a>
+                                    
+                                    <div class="rev_date">
+                                    1초 전
+                                    </div>
+                                    
+                                
+                                </div>
+                                
+                                <div class="rvtxt2">
+                                <div class="star_box">
+                                   
+                                    <img src="../resources/images/star.svg" width="15" height="14"><img src="../resources/images/star.svg" width="15" height="14"><img src="../resources/images/star.svg" width="15" height="14"><img src="../resources/images/star.svg" width="15" height="14">
+                                    
+                                    </div>
+                                
+                                </div>
+                                
+                                <div class="rvtxt3">
+                                빠른배송 좋은상품 좋은거래였습니다 좋은일 가득하세요^^
+                                
+                                </div>
+                                
+                            </div>
+                            
+                        </div>  <!-- 리뷰1개 -->
+                        
+                           <div class="rev_box">
+                        <a class="rev_img" href="">
+                            <img src="../resources/images/default_shop_img.svg" width="32" height="32">
+                            </a>
+                        
+                            <div class="rev_txt">
+                                <div class="rvtxt1">
+                                <a href="" class="goshop">황선혜</a>
+                                    
+                                    <div class="rev_date">
+                                    2초 전
+                                    </div>
+                                    
+                                
+                                </div>
+                                
+                                <div class="rvtxt2">
+                                <div class="star_box">
+                                   
+                                    <img src="../resources/images/star.svg" width="15" height="14">
+                                    
+                                    </div>
+                                
+                                </div>
+                                
+                                <div class="rvtxt3">
+                                왜 사기치세요 ??
+                                
+                                </div>
+                                
+                            </div>
+                            
+                        </div>  <!-- 리뷰1개 -->
+                        
+                        
+                    </div> 
+                
+                    <div class="rev_link">
+                    <a href="">상점후기 더보기 ></a>
+                    </div>
+                    
+                    
+                    
+                    
+                </div>
+                
+                
+            </div>
+        </div>
+        
+        </div>
+        
+    
+    </section>
+    
+    <footer id="footer">
+    
+    <div id="wrap">
+        <div class="copy">
+            <p>ⓒ2021 Team <span class="sig-color">SYSO</span></p>
+        <p>Designed by Kys</p>
+        </div>
+    </div>
+    </footer>
+    
+    
+      <script>
+          $(function() { 
+     $( "#tabs" ).tabs(); 
+   
+     $('.me').click(function(){
+         $('.me').removeClass('on');
+         $(this).addClass('on');
+     });
+          });
+     
+    </script>
+    </body>
+</html>
+
+    
