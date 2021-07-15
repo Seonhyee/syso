@@ -85,6 +85,15 @@
 						</span> <span class="error_next_box"></span>
 					</div>
 
+					<div>
+						<h3 class="join_title">
+							<label for="name">닉네임<span class="sig-color">*</span></label>
+						</h3>
+						<span class="box int_name">
+							<input type="text" id="name" class="int" name="name" maxlength="20" required>
+						</span>
+					</div>
+
 					<!-- NAME -->
 					<div>
 						<h3 class="join_title">

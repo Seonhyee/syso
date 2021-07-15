@@ -376,8 +376,9 @@
                <td>1/0</td>
                <td>2020/07-11</td>
                <td>
-                  <a href="#" style="margin-bottom: 5px;">수정</a>
-                   <a href="#" style="color: red;">삭제</a>
+               		<a href="#" style="margin-bottom: 5px; color: orange">UP</a>
+					<a href="#" style="margin-bottom: 5px;">수정</a>
+                    <a href="#" style="color: red;">삭제</a>
                   </td>
            </tr>
                
@@ -397,9 +398,10 @@
                <td>1/0</td>
                <td>2020/07-11</td>
                <td>
-                  <a href="#" style="margin-bottom: 5px;">수정</a>
-                   <a href="#" style="color: red">삭제</a>
-                  </td>
+					<a href="#" style="margin-bottom: 5px; color: orange">UP</a>
+					<a href="#" style="margin-bottom: 5px;">수정</a>
+                    <a href="#" style="color: red;">삭제</a>
+               </td>
            </tr>
            
            </tbody>
