@@ -1,8 +1,11 @@
 package com.itwillbs.controller;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class MemberController {
@@ -43,7 +46,16 @@ public class MemberController {
 		return "/member/deletePro";
 	}
 	
-	
+	@Controller
+	public class KakaoController {
+
+		@RequestMapping(value = "/login/getKakaoAuthUrl")
+		public @ResponseBody String getKakaoAuthUrl(HttpServletRequest request) throws Exception{
+			
+			String reqUrl = kakaoAuthUrl + "/oauth/authorize?client_id=" + kakaoApiKey + "&redirect_uri="+ redirectURI + "&response_type=code";
+			
+			return reqUrl;
+		}
 	
 	
 	
