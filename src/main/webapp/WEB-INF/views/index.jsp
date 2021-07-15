@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
+   
+ 
 <!doctype html>
 <html>
 <head>
@@ -95,18 +97,18 @@
                         <li class="strong"><a href="#">전체 카테고리</a></li>
 
 
-                        <li><a href="#">여성의류</a></li>
-                        <li><a href="#">패션잡화</a></li>
-                        <li><a href="#">남성의류</a></li>
-                        <li><a href="#">디지털/가전</a></li>
-                        <li><a href="#">도서/티켓/취미/반려</a></li>
-                        <li><a href="#">스타굿즈</a></li>
-                        <li><a href="#">생활/문구/가구/식품</a></li>
-                        <li><a href="#">스포츠/레저</a></li>
-                        <li><a href="#">뷰티/미용</a></li>
-                        <li><a href="#">유아동/출산</a></li>
-                        <li><a href="#">차량/오토바이</a></li>
-                        <li><a href="#">기타</a></li>
+                        <li><a href="category?category_idx=1">여성의류</a></li>
+                        <li><a href="category?category_idx=2">패션잡화</a></li>
+                        <li><a href="category?category_idx=3">남성의류</a></li>
+                        <li><a href="category?category_idx=4">디지털/가전</a></li>
+                        <li><a href="category?category_idx=5">도서/티켓/취미/반려</a></li>
+                        <li><a href="category?category_idx=6">스타굿즈</a></li>
+                        <li><a href="category?category_idx=7">생활/문구/가구/식품</a></li>
+                        <li><a href="category?category_idx=8">스포츠/레저</a></li>
+                        <li><a href="category?category_idx=9">뷰티/미용</a></li>
+                        <li><a href="category?category_idx=10">유아동/출산</a></li>
+                        <li><a href="category?category_idx=11">차량/오토바이</a></li>
+                        <li><a href="category?category_idx=12">기타</a></li>
 
                      </ul>
 

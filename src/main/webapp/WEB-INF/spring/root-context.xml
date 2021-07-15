@@ -5,4 +5,33 @@
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->
 		
+		<!-- Root Context: defines shared resources visible to all other web components -->
+		<!-- MemberController 스프링(xml) 객체생성 생성자(), set()메서드를 호출해서 값전달(주입)-->	
+<!-- 		<bean id="memberController" class="com.itwillbs.myweb.MemberController"> -->
+<!-- 		<constructor-arg name="memberService" ref="memberService"></constructor-arg> -->
+<!-- 			<property name="memberService" ref="memberService"></property> -->
+<!-- 		</bean> -->
+		
+		<!-- MemberServiceImpl 스프링(xml) 객체생성 -->
+<!-- 		<bean id="memberService" class="com.itwillbs.service.MemberServiceImpl"> -->
+<!-- 			<property name="memberDAO" ref="memberDAO"></property> -->
+<!-- 		</bean> -->
+	
+		<!-- MemberDAOImpl 스프링(xml) 객체생성 -->
+<!-- 		<bean id="memberDAO" class="com.itwillbs.dao.MemberDAOImpl"> -->
+<!-- 			<property name="dataSource" ref="dataSource"></property> -->
+<!-- 		</bean> -->
+		
+		
+		
+		
+		<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+			<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+			<property name="url" value="jdbc:mysql://localhost:3306/jspdb3"></property>
+			<property name="username" value="root"></property>
+			<property name="password" value="1234"></property>
+		</bean>
+		
+		
+		
 </beans>
