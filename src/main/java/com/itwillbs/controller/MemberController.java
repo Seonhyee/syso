@@ -46,13 +46,22 @@ public class MemberController {
 		return "/member/deletePro";
 	}
 
-	@RequestMapping(value = "/login/getKakaoAuthUrl")
-	public @ResponseBody String getKakaoAuthUrl(HttpServletRequest request) throws Exception {
+	@RequestMapping(value = "/member/kakao_login", method = RequestMethod.GET)
+	public String kakao_login(HttpServletRequest request) {
+		
+		String code;
+		if(request.getParameter("code") != null) {
+			
+		try {
+			code = request.getParameter("code");
+			System.out.println("code : " + code);
+		} catch (NullPointerException e) {
+			// TODO Auto-generated catch block
+			System.out.println("NULL error 발생!" + e.getMessage());
+		}
+		}
 
-		String reqUrl = kakaoAuthUrl + "/oauth/authorize?client_id=" + kakaoApiKey + "&redirect_uri=" + redirectURI
-				+ "&response_type=code";
-
-		return reqUrl;
+		return "/member/kakao_login";
 	}
-
+	
 }
