@@ -10,7 +10,7 @@ public class ItemController {
 	@RequestMapping(value = "/item/insert", method = RequestMethod.GET)
 	public String insert() {
 		
-		return "/product/insertForm";
+		return "/item/insertForm";
 	}
 	
 	@RequestMapping(value = "/item/insertPro", method = RequestMethod.POST)
@@ -54,6 +54,12 @@ public class ItemController {
 	public String sales() {
 
 		return "insertForm";
+	}
+	
+	@RequestMapping(value = "/item/detail", method = RequestMethod.GET)
+	public String detail() {
+
+		return "/item/item_detail";
 	}
 	
 	

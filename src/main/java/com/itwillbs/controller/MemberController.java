@@ -61,6 +61,13 @@ public class MemberController {
 		}
 		}
 
+		return "/member/kakao";
+	}
+	
+	@RequestMapping(value = "/member/kakao_login1", method = RequestMethod.GET)
+	public String kakao_login1(HttpServletRequest request) {
+		
+
 		return "/member/kakao_login";
 	}
 	
