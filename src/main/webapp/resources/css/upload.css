@@ -559,3 +559,14 @@ margin-top: 15px;
     padding: 20px;
     font-weight: normal;
 }
+
+select, option{
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    font-weight: bold;
+
+}
+

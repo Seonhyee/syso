@@ -129,6 +129,12 @@
 #sec1{
     margin-bottom: 50px;
 }
+.no-data{
+	display:block;
+	color:#333;
+	text-align: center;
+	padding:20px;
+}
 
 #sec2 #content_area{
     width: 100%;
@@ -174,7 +180,7 @@
 .content:nth-child(4n+0){
     margin-right: 0;
 }
-.content:nth-child(1), .content:nth-child(5n+0){
+.content:nth-child(1), .content:nth-child(4n-3){
     margin-left: 20px;
 }
 

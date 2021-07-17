@@ -1,46 +1,52 @@
 package com.itwillbs.controller;
 
+
+import java.sql.Timestamp;
+
+import javax.inject.Inject;
+
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-@Controller
-public class MemberController {
+import com.itwillbs.domain.MemberVO;
+import com.itwillbs.service.MemberService;
 
-	@RequestMapping(value = "/join", method = RequestMethod.GET)
-	public String join() {
+@Controller
+public class MemberController  {
+	
+	@Inject
+	private MemberService service;
+	
+	@RequestMapping(value = "/joinPro", method = RequestMethod.POST)
+	public String join(@ModelAttribute("vo") MemberVO vo) {
+			System.out.println("joinPro 왔음");
+			
+		System.out.println(vo.getMember_id());
+		System.out.println(vo.getMember_name());
 		
-		return "/member/joinForm";
+		 service.memberJoinProcess(vo);
+			
+		return "redirect:certification";
 	}
 	
-	@RequestMapping(value = "/login", method = RequestMethod.GET)
-	public String login() {
-		
-		return "/member/loginForm";
+	@RequestMapping(value = "/certification", method = RequestMethod.GET)
+	public String cert(){
+		System.out.println("MainController /join");
+				
+		return "./member/certification";
 	}
-	
-	@RequestMapping(value = "/find_Info", method = RequestMethod.GET)
-	public String find_Info() {
+	@RequestMapping(value="/joinconfirm", method=RequestMethod.GET)
+	public String emailConfirm(@ModelAttribute("uVO") MemberVO vo, Model model) throws Exception {
+		System.out.println(vo.getMember_email() + ": auth confirmed");
+		vo.setMember_authStatus(1);	// authstatus를 1로,, 권한 업데이트
+		service.updateAuthstatus(vo);
 		
-		return "/member/find_Info";
-	}
-	
-	@RequestMapping(value = "/member/update", method = RequestMethod.GET)
-	public String update() {
+		model.addAttribute("name", vo.getMember_name());
 		
-		return "/member/updateForm";
-	}
-	
-	@RequestMapping(value = "/member/updatePro", method = RequestMethod.GET)
-	public String updatePro() {
-		
-		return "/member/updatePro";
-	}
-	
-	@RequestMapping(value = "/member/deletePro", method = RequestMethod.GET)
-	public String deletePro() {
-		
-		return "/member/deletePro";
+		return "./member/joinconfirm";
 	}
 	
 	

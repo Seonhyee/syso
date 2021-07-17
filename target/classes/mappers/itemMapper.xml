@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.itwillbs.itemMapper">
+
+<select id="getItem" resultType="com.itwillbs.domain.ItemVO">
+select item_subject, item_price, item_date from item order by item_date desc limit 0, 8
+</select>
+
+<select id="infinite" resultType="com.itwillbs.domain.ItemVO">
+<![CDATA[
+select item_subject, item_price, item_date from item order by item_date desc limit #{startNum}, #{endNum}
+]]>
+</select>
+
+
+<insert id="join" parameterType="com.itwillbs.domain.MemberVO">
+insert into member(member_id, member_password, member_name, member_nickname, member_email, member_zipcode, member_address, member_addressDetail, member_phone, member_authStatus, member_authKey)
+values(
+#{member_id},
+#{member_password},
+#{member_name},
+#{member_nickname},
+#{member_email},
+#{member_zipcode},
+#{member_address},
+#{member_addressDetail},
+#{member_phone},
+0,
+null
+)
+
+</insert>
+
+
+<update id="authkey" parameterType="com.itwillbs.domain.MemberVO">
+update member set member_authKey = #{member_authKey} where member_id = #{member_id}
+</update>
+
+<update id="authstatus" parameterType="com.itwillbs.domain.MemberVO">
+update member set member_authStatus = #{member_authStatus} where member_id = #{member_id}
+</update>
+
+
+</mapper>
+
+
+
+
+
+
+
+
+

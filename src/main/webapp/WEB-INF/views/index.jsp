@@ -1,6 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
     
+
 <!doctype html>
 <html>
 <head>
@@ -8,19 +10,18 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
 
-<title>시소마켓</title>
+<title>프로젝트명</title>
   <!--[if lt IE 9]>
       <script src="js/html5.js"></script>
    <![endif]-->
 
-<link href="./resources/css/common.css" rel="stylesheet" type="text/css">
-<link href="./resources/css/header.css" rel="stylesheet" type="text/css">
-<link href="./resources/css/style.css" rel="stylesheet" type="text/css">
+<link href="resources/css/common.css" rel="stylesheet" type="text/css">
+<link href="resources/css/header.css" rel="stylesheet" type="text/css">
+<link href="resources/css/style.css" rel="stylesheet" type="text/css">
 
-<link rel="stylesheet" type="text/css" href="./resources/css/slick.css">
 
-<script src="./resources/js/jquery-3.1.1.min.js"></script>
-<script src="./resources/js/toggle.js"></script>
+<script src="resources/js/jquery-3.1.1.min.js"></script>
+<script src="resources/js/toggle.js"></script>
 
 
 
@@ -28,10 +29,17 @@
 
 <body>
 
+<!-- String pattern = "HH"; -->
+<!-- SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern); -->
+
+<!-- String date = simpleDateFormat.format(new Date()); -->
+
+<!-- %> -->
+
 <div class="bar">
     <ul>
     <li id="btn">
-        <img src="./resources/images/alarm.svg">
+        <img src="resources/images/alarm.svg">
 
         <ul id="layer">
       <li><a href="#">""님이 구매하셨습니다</a></li>
@@ -44,7 +52,7 @@
         
         <li>
             
-            <a href="#"><img src="./resources/images/redheart.svg"></a>
+            <a href="#"><img src="resources/images/redheart.svg"></a>
         </li>
         
         <li>
@@ -59,18 +67,18 @@
                 <div class="login">
 
     <ul>
-        <li><a href="/syso/login" class="sig-color">로그인</a></li>
-        <li><a href="/syso/join" class="sig-color">회원가입</a></li>
+        <li><a href="login" class="sig-color">로그인</a></li>
+        <li><a href="join" class="sig-color">회원가입</a></li>
         </ul>
 
 
     </div>
-             <h1 id="logo"><a href="/syso/"><img src="./resources/images/main_logo.svg"></a></h1>
+             <h1 id="logo"><a href="index.html"><img src="resources/images/main_logo.svg"></a></h1>
 
         <div class="search_wrap">
         <div class="search_area">
             <input type="text" class="search" placeholder="상품명,지역명,@상점명 입력">
-        <a href="#" class="search_img"><img src="./resources/images/home_search.svg"></a>
+        <a href="#" class="search_img"><img src="resources/images/home_search.svg"></a>
         </div>
 
 
@@ -78,18 +86,18 @@
              <div class="nav_right">
              <ul>
                  <li>
-                     <a href="/syso/item/insert"> <img src="./resources/images/money.svg"> 판매하기</a>
+                     <a href="product/write_form.html"> <img src="resources/images/money.svg"> 판매하기</a>
                  </li>
                  <li>
-                 	 <a href="/syso/shop/item"><img src="./resources/images/shop.svg">내상점</a>
+                 <img src="resources/images/shop.svg">내상점
                  </li>
 
                  <li>
-                 	<a href=""><img src="./resources/images/talk.svg">시소톡</a>
+                 <img src="resources/images/talk.svg">시소톡
                  </li>
 
                  <li id="btn2">
-                 <img src="./resources/images/hamburg.svg">카테고리
+                 <img src="resources/images/hamburg.svg">카테고리
 
                     <ul id="layer2">
                         <li class="strong"><a href="#">전체 카테고리</a></li>
@@ -128,7 +136,7 @@
   <ul>
     <li>
       <div class="left_top">
-        <img src="./resources/images/mainlogo.png">
+        <img src="resources/images/mainlogo.png">
       </div>
 
       <div class="left_bottom">
@@ -149,7 +157,7 @@
 
       <li>
           <div class="event_box">
-          <img src="./resources/images/mainEvent1.png">
+          <img src="resources/images/mainEvent1.png">
               
         <div class="event_txt">
               <p style="color: #fff;">회원가입시 추천인 아이디 입력시 추천인과
@@ -170,6 +178,7 @@
 
     </li>
   </ul>
+  
   </article>
     </div>
     </section>
@@ -179,119 +188,27 @@
     <h1>오늘의 상품 추천</h1>
             <a href="#">
             <article id="content_area">
+            <c:forEach items="${list}" var="list">
             <div class="content">
                 <div class="content_top">
-                <img src="./resources/images/apeach.jpg" width="246" height="200">
+                <img src="resources/images/apeach.jpg" width="246" height="200">
                 </div>
 
                 <div class="content_bottom">
                 <div class="con_title">
-                    가나다라마바사앚차카타파하아어여요오유</div>
+                    ${list.item_subject} </div>
                     <div class="con_text">
                 <div class="con_price">
-                        28,000원
+                        ${list.item_price}원
                         </div>
                     <div class="con_time">
-                        <span>2시간전</span>
+                       <span id="">${list.item_date}전</span>
                         </div>
                     </div>
                 </div>
                 </div>
-
-                <div class="content">
-                <div class="content_top">
-                <img src="./resources/images/apeach.jpg" width="246" height="200">
-                </div>
-
-                <div class="content_bottom">
-                <div class="con_title">
-                    가나다라마바사앚차카타파하아어여요오유</div>
-                    <div class="con_text">
-                <div class="con_price">
-                        28,000원
-                        </div>
-                    <div class="con_time">
-                        <span>2시간전</span>
-                        </div>
-                    </div>
-                </div>
-                </div>
-
-                <div class="content">
-                <div class="content_top">
-                <img src="./resources/images/apeach.jpg" width="246" height="200">
-                </div>
-
-                <div class="content_bottom">
-                <div class="con_title">
-                    가나다라마바사앚차카타파하아어여요오유</div>
-                    <div class="con_text">
-                <div class="con_price">
-                        28,000원
-                        </div>
-                    <div class="con_time">
-                        <span>2시간전</span>
-                        </div>
-                    </div>
-                </div>
-                </div>
-
-                <div class="content">
-                <div class="content_top">
-                <img src="./resources/images/apeach.jpg" width="246" height="200">
-                </div>
-
-                <div class="content_bottom">
-                <div class="con_title">
-                    가나다라마바사앚차카타파하아어여요오유</div>
-                    <div class="con_text">
-                <div class="con_price">
-                        28,000원
-                        </div>
-                    <div class="con_time">
-                        <span>2시간전</span>
-                        </div>
-                    </div>
-                </div>
-                </div>
-
-                <div class="content">
-                <div class="content_top">
-                <img src="./resources/images/apeach.jpg" width="246" height="200">
-                </div>
-
-                <div class="content_bottom">
-                <div class="con_title">
-                    가나다라마바사앚차카타파하아어여요오유</div>
-                    <div class="con_text">
-                <div class="con_price">
-                        28,000원
-                        </div>
-                    <div class="con_time">
-                        <span>2시간전</span>
-                        </div>
-                    </div>
-                </div>
-                </div>
-
-                <div class="content">
-                <div class="content_top">
-                <img src="./resources/images/apeach.jpg" width="231" height="200">
-                </div>
-
-                <div class="content_bottom">
-                <div class="con_title">
-                    가나다라마바사앚차카타파하아어여요오유</div>
-                    <div class="con_text">
-                <div class="con_price">
-                        28,000원
-                        </div>
-                    <div class="con_time">
-                        <span>2시간전</span>
-                        </div>
-                    </div>
-                </div>
-                </div>
+				</c:forEach>
+			
 
             </article>
             </a>
@@ -305,7 +222,103 @@
 
     </footer>
 
+<script type="text/javascript">
 
+	var startNum = 9;
+	var endNum = 16;
+	
+		
+	$(window).scroll(function(){
+		
+			if ($(window).scrollTop() >= $(document).height()- $(window).height()) {
+			
+				
+			
+				$.ajax({
+					type:'post',
+					url:'infiniteScrollDown',
+					contentType : 'application/json',
+					dataType : 'json',
+					data:JSON.stringify({
+						"startNum":startNum,"endNum":endNum
+					}),
+						
+					
+					
+					success:function(data){
+					var str = "";
+					
+					if(data != ""){
+						$(data).each(function(){
+							console.log(this);
+							str +=   "<div class="+"'content'" +">"
+			               		+	 "<div class="+ "'content_top'" +">"
+			               		+	 "<img src="+"'resources/images/apeach.jpg'"+ "width="+"'246'" + "height="+"'200'"+">"
+			               		+	 "</div>"
+			                	+	"<div class="+"'content_bottom'"+">"
+			               		+	 "<div class="+"'con_title'"+">"
+			                   	+	this.item_subject +"</div>"
+			                  	+	  "<div class="+"'con_text'"+">"
+			                	+	"<div class="+"'con_price'"+">"
+			                    +   this.item_price+"원"
+			                    +  "</div>"
+			                    +	"<div class="+"'con_time'"+">"
+			                    +   "<span>"+ timeForToday(this.item_date)+"</span></div></div></div></div>";
+			                  
+						}); // each
+						$("#content_area").append(str);
+						var lastStartNum = startNum;
+						var lastEndNum = endNum;
+						startNum = lastEndNum + 1;
+						endNum = lastStartNum + lastEndNum -1;
+						
+					} //if data != null
+					else{
+						alert("더이상 불러올 데이터가 없습니다.");
+						
+						
+					} //else
+					} //success
+						
+				});  //ajax
+			} // if scroll ==0
+
+});  // 스크롤
+
+
+function timeForToday(value) {
+    const today = new Date();
+    const timeValue = new Date(value);
+    const betweenTime = Math.floor((today.getTime() - timeValue.getTime()) / 1000 / 60);
+    if (betweenTime < 1){
+
+    	return '방금전';
+    	}
+    if (betweenTime < 60) {
+
+        return `${betweenTime}분전`;
+    }
+
+    const betweenTimeHour = Math.floor(betweenTime / 60);
+    if (betweenTimeHour < 24) {
+
+        return `${betweenTimeHour}시간전`;
+    }
+
+    const betweenTimeDay = Math.floor(betweenTime / 60 / 24);
+    if (betweenTimeDay < 365) {
+    	
+
+        return `${betweenTimeDay}일전`;
+    }
+
+    return `${Math.floor(betweenTimeDay / 365)}년전`;
+}
+
+
+	
+	
+ </script>
 
 
 
